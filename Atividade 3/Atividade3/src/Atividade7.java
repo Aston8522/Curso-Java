@@ -6,21 +6,22 @@ public class Atividade7 {
 
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
+   int n = sc.nextInt();
+   for (int i=0; i < n; i++){
 
-        for (int i=0; i<n; i++) {
+       int x1 = sc.nextInt();
+      int  x2 = sc.nextInt();
+       if (x2 == 0) {
+           System.out.println("divisão impossivel");
+       }
+       else{
+           double divisao = (double) x1 / x2;
 
-            int x = sc.nextInt();
-            int y = sc.nextInt();
+           System.out.printf("%.2f%n" , divisao);
+           }
 
-            if (y == 0) {
-                System.out.println("divisao impossivel");
-            }
-            else {
-                double div = (double) x / y;
-                System.out.printf("%.1f%n", div);
-            }
-        }
 
-        sc.close();
+     }
+     sc.close();
+     }
     }
